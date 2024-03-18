@@ -20,7 +20,8 @@
   body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   </style>
 
-  <link rel="icon" type="image/png" href="images/icon.jpg">
+  
+  <link rel="icon" type="image/png"  href="images/logo10.png">
 
 </head>
 
@@ -50,6 +51,21 @@
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
+<style>
+  .container {
+    width: 100%;
+    overflow: hidden; /* 清除浮动 */
+  }
+  .text {
+    width: 70%;
+    float: left;
+  }
+  .image {
+    width: 30%;
+    float: right;
+  }
+</style>
+
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:150px">
 
@@ -58,26 +74,10 @@
 
 <!-- The Home Section -->
     <div class="w3-container w3-center w3-padding-32" id="home">
-      <img style="width: 30%;max-width: 320px" alt="profile photo" src="images/Yongwei_chen.jpg">
+      <img style="width: 20%;max-width: 320px" alt="profile photo" src="images/Yongwei_chen.jpg">
       <h1>Yongwei Chen（陈永炜）</h1>
         <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:600px">
-          As a Master's student (by research) at the 
-          <a href="https://www.scut.edu.cn/">South China University of Technology</a>, 
-          I am fortunate to be working under the tutelage of Professor 
-          <a href="http://kuijia.site/">Kui Jia</a>.
-          My primary research interest is in the exciting and constantly-evolving field of 
-          3D vision and graphics, with a specific focus on deep learning for physically 
-          based rendering.<br>
-          <br>
-          I earned my Bachelor's degree from the same university, where I honed my skills 
-          and passion for this field. Recently, I have been actively engaged in developing 
-          an AI artist capable of generating 3D assets autonomously, including materials, 
-          shapes, motions, and other relevant parameters. This project is a fascinating and 
-          challenging undertaking, and our first attempt in this direction was accepted by 
-          <a href="https://nips.cc/">NeurIPS 2022</a>. Our solution is designed to stylize arbitrary meshes according to 
-          given text prompts, demonstrating our proficiency and innovation in this space.
-          <br>
-
+          I am currently conducting my research and will pursue my PhD studies in <a  style="color: #447ec9" href="https://www.mmlab-ntu.com/">MMLab@NTU</a>, supervised by <a  style="color: #447ec9" href="https://xingangpan.github.io/">Xingang Pan</a>. Prior to this, I earned both my Master's and Bachelor's degrees at South China University of Technology, under the mentorship of <a  style="color: #447ec9" href="http://kuijia.site/">Kui Jia</a>. My primary research interest lies in the exciting and constantly-evolving realm of 3D vision and graphics, with a particular emphasis on 3D generation.
         </p>
         <p class="w3-center">
           <a href="mailto:yongweichencyw@gmail.com">Email</a> &nbsp/&nbsp
@@ -87,10 +87,13 @@
         </tbody></table>
   </div>
 
+
 <!-- The News Section -->
   <div class="w3-container w3-light-grey w3-padding-32" id="news">
    <h2>News</h2>
-      <p><li> 03/2023, our new work Fantasia3D has been arXived.</li></p>
+      <p><li> 03/2024, Embark on my new journey in NTU!</li></p>
+      <p><li> 12/2023, Obtain my Master's degree!</li></p>
+      <p><li> 03/2023, Our new work Fantasia3D has been arXived.</li></p>
       <p><li> 09/2022, 1 paper has been accepted by <a href="https://nips.cc/">NeurIPS 2022</a>. </li></p>
       <p><li> 06/2022, 1 paper has been accepted by <a href="https://eccv2022.ecva.net/">ECCV 2022</a>. </li></p>
 
@@ -102,10 +105,18 @@
     <p class="w3-justify">
     </p>
         <p>
+        <strong>ComboVerse: Compositional 3D Assets Creation Using Spatially-Aware Diffusion Guidance</strong><br>
+        <strong>Yongwei Chen*</strong>, <a href="https://tengfei-wang.github.io/">Tengfei Wang*</a>, <a href="https://wutong16.github.io/">Tong Wu</a>, <a href="https://xingangpan.github.io/">Xingang Pan</a>, <a href="http://kuijia.site/">Kui Jia</a>, <a href="https://liuziwei7.github.io/">Ziwei Liu</a><br>
+        <strong><em>* equal contribution</em></strong><br>
+        <em>Preprint</em> | <a style="color: #447ec9" href="">Paper</a> | <a style="color: #447ec9" href="https://cyw-3d.github.io/ComboVerse/">Project Page</a> | <a style="color: #447ec9" href="https://youtu.be/2IVcyJl8vWc">Video</a> <br>
+        <p style="text-align: center;"><img style="width:90%;" src="images/comboverse.png"></p>
+        </p>
+
+        <p>
         <strong>Fantasia3D: Disentangling Geometry and Appearance for High-quality Text-to-3D Content Creation</strong><br>
         <a href="https://aruichen.github.io/">Rui Chen*</a>, <strong>Yongwei Chen*</strong>, <a href="https://ningxinj.github.io/">Ningxin Jiao</a>, <a href="http://kuijia.site/">Kui Jia</a><br>
         <strong><em>* equal contribution</em></strong><br>
-        <em>Preprint</em> | <a style="color: #447ec9" href="https://arxiv.org/abs/2303.13873">Paper</a> | <a style="color: #447ec9" href="https://fantasia3d.github.io/">Project Page</a> | <a style="color: #447ec9" href="https://github.com/Gorilla-Lab-SCUT/Fantasia3D">Code</a> | <a style="color: #447ec9" href="https://www.youtube.com/watch?v=Xbzl4HzFiNo">Video</a> <br>
+        <em>ICCV 2023</em> | <a style="color: #447ec9" href="https://arxiv.org/abs/2303.13873">Paper</a> | <a style="color: #447ec9" href="https://fantasia3d.github.io/">Project Page</a> | <a style="color: #447ec9" href="https://github.com/Gorilla-Lab-SCUT/Fantasia3D">Code</a> | <a style="color: #447ec9" href="https://www.youtube.com/watch?v=Xbzl4HzFiNo">Video</a> <br>
         <p style="text-align: center;"><img style="width:90%;" src="images/fantasia3D.jpg"></p>
         </p>
 
